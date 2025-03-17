@@ -1,0 +1,502 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "Introduction to Demo Time",
+  "description": "",
+  "demos": [
+    {
+      "title": "Getting started with Demo Time",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": "snippets/cleanup.json"
+        },
+        {
+          "action": "create",
+          "path": "/.demo/slides/create-a-slide.md",
+          "contentPath": "/snapshots/create-a-slide.snapshot.md"
+        },
+        {
+          "action": "create",
+          "path": "/.demo/slides/demo-layout-slide.md",
+          "contentPath": "/snapshots/demo-layout-slide.snapshot.md"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "demo-time.togglePresentationMode"
+        },
+        {
+          "action": "snippet",
+          "contentPath": "snippets/startPresentation.json"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/getting-started-with-demo-time.md"
+        }
+      ]
+    },
+    {
+      "title": "What is Demo Time?",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/what-is-demo-time.md"
+        }
+      ]
+    },
+    {
+      "title": "Benefits of Demo Time",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/benefits.md"
+        }
+      ]
+    },
+    {
+      "title": "How to get started?",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/how-to-get-started.md"
+        }
+      ]
+    },
+    {
+      "title": "Show extension",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": "snippets/endPresentation.json"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.extensions.action.installExtensions"
+        }
+      ]
+    },
+    {
+      "title": "Open Demo Time panel",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "demo-time.focus"
+        }
+      ]
+    },
+    {
+      "title": "Open demo file",
+      "description": "",
+      "steps": [
+        {
+          "action": "create",
+          "path": "/.demo/demo.json",
+          "contentPath": "/snapshots/demo.snapshot.json"
+        },
+        {
+          "action": "open",
+          "path": ".demo/demo.json"
+        }
+      ]
+    },
+    {
+      "title": "Demo Actions",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": "snippets/startPresentation.json"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/demo-actions.md"
+        }
+      ]
+    },
+    {
+      "title": "Actions",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/actions.md"
+        }
+      ]
+    },
+    {
+      "title": "Example file action",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/example-file-action.md"
+        }
+      ]
+    },
+    {
+      "title": "Example highlighting",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/example-highlighting.md"
+        }
+      ]
+    },
+    {
+      "title": "Demo highlighting",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": "snippets/endPresentation.json"
+        },
+        {
+          "action": "applyPatch",
+          "path": "/.demo/demo.json",
+          "contentPath": "/snapshots/demo.snapshot.json",
+          "patch": "/patches/demo.highlight.patch"
+        },
+        {
+          "action": "highlight",
+          "path": ".demo/demo.json",
+          "startPlaceholder": "\"action\": \"highlight\"",
+          "endPlaceholder": "\"zoom\": 3",
+          "zoom": 3
+        }
+      ]
+    },
+    {
+      "title": "More code focus",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "/.demo/demo.json"
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "demoTime.highlightBorderColor",
+            "value": "transparent"
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "demoTime.highlightBackground",
+            "value": "rgba(19, 142, 151, 0.2)"
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "demoTime.highlightOpacity",
+            "value": 0.5
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "demoTime.highlightBlur",
+            "value": 2
+          }
+        },
+        {
+          "action": "applyPatch",
+          "path": "/.demo/demo.json",
+          "contentPath": "/snapshots/demo.snapshot.json",
+          "patch": "/patches/demo.highlight.patch"
+        },
+        {
+          "action": "highlight",
+          "path": ".demo/demo.json",
+          "startPlaceholder": "\"action\": \"highlight\"",
+          "endPlaceholder": "\"zoom\": 3",
+          "zoom": 3
+        }
+      ]
+    },
+    {
+      "title": "Show VSCode settings",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": ".vscode/settings.json"
+        }
+      ]
+    },
+    {
+      "title": "Example of vscode command",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": "snippets/startPresentation.json"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/example-of-vscode-command.md"
+        }
+      ]
+    },
+    {
+      "title": "There is more",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/there-is-more.md"
+        }
+      ]
+    },
+    {
+      "title": "Slides",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/slides.md"
+        }
+      ]
+    },
+    {
+      "title": "Present your slides",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/present-your-slides.md"
+        }
+      ]
+    },
+    {
+      "title": "Getting started with slides",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/getting-started-with-slides.md"
+        }
+      ]
+    },
+    {
+      "title": "Create a slide",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/create-a-slide.md"
+        }
+      ]
+    },
+    {
+      "title": "Show slide",
+      "description": "",
+      "steps": [
+        {
+          "action": "close"
+        },
+        {
+          "action": "snippet",
+          "contentPath": "snippets/endPresentation.json"
+        },
+        {
+          "action": "open",
+          "path": ".demo/slides/create-a-slide.md"
+        }
+      ]
+    },
+    {
+      "title": "Preview slide",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/create-a-slide.md"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.splitEditorToRightGroup"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusLeftGroup"
+        }
+      ]
+    },
+    {
+      "title": "Update theme",
+      "description": "",
+      "steps": [
+        {
+          "action": "insert",
+          "path": "/.demo/slides/create-a-slide.md",
+          "position": 2,
+          "content": "theme: monomi"
+        }
+      ]
+    },
+    {
+      "title": "Update theme",
+      "description": "",
+      "steps": [
+        {
+          "action": "insert",
+          "path": "/.demo/slides/create-a-slide.md",
+          "position": 2,
+          "content": "theme: minimal"
+        }
+      ]
+    },
+    {
+      "title": "Update theme",
+      "description": "",
+      "steps": [
+        {
+          "action": "insert",
+          "path": "/.demo/slides/create-a-slide.md",
+          "position": 2,
+          "content": "theme: unnamed"
+        }
+      ]
+    },
+    {
+      "title": "Layout",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": ".demo/slides/demo-layout-slide.md"
+        },
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/demo-layout-slide.md"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusLeftGroup"
+        }
+      ]
+    },
+    {
+      "title": "Intro layout",
+      "description": "",
+      "steps": [
+        {
+          "action": "insert",
+          "path": "/.demo/slides/demo-layout-slide.md",
+          "position": 3,
+          "content": "layout: intro"
+        }
+      ]
+    },
+    {
+      "title": "Quote layout",
+      "description": "",
+      "steps": [
+        {
+          "action": "insert",
+          "path": "/.demo/slides/demo-layout-slide.md",
+          "position": 3,
+          "content": "layout: quote"
+        }
+      ]
+    },
+    {
+      "title": "Quote layout",
+      "description": "",
+      "steps": [
+        {
+          "action": "insert",
+          "path": "/.demo/slides/demo-layout-slide.md",
+          "position": 3,
+          "content": "layout: image-left\nimage: .demo/assets/demotime.png"
+        }
+      ]
+    },
+    {
+      "title": "Is there more",
+      "description": "",
+      "steps": [
+        {
+          "action": "closeAll"
+        },
+        {
+          "action": "snippet",
+          "contentPath": "snippets/startPresentation.json"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/is-there-more.md"
+        }
+      ]
+    },
+    {
+      "title": "More features",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/more-features.md"
+        }
+      ]
+    },
+    {
+      "title": "Presenter view",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "demo-time.showPresenterView"
+        }
+      ]
+    },
+    {
+      "title": "Showcases",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/showcases.md"
+        }
+      ]
+    },
+    {
+      "title": "Showcases",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/showcases2.md"
+        }
+      ]
+    },
+    {
+      "title": "Want to know more",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/want-to-know-more.md"
+        }
+      ]
+    },
+    {
+      "title": "Thank you",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/thank-you.md"
+        }
+      ]
+    }
+  ]
+}

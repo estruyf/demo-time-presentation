@@ -1,0 +1,36 @@
+[
+  {
+    "action": "executeScript",
+    "id": "cleanWorkspace",
+    "path": ".demo/scripts/cleanUp.mjs",
+    "command": "~/.nvm/versions/node/v18.20.5/bin/node"
+  },
+  {
+    "action": "setSetting",
+    "setting": {
+      "key": "demoTime.highlightBorderColor",
+      "value": null
+    }
+  },
+  {
+    "action": "setSetting",
+    "setting": {
+      "key": "demoTime.highlightBackground",
+      "value": null
+    }
+  },
+  {
+    "action": "setSetting",
+    "setting": {
+      "key": "demoTime.highlightOpacity",
+      "value": null
+    }
+  },
+  {
+    "action": "setSetting",
+    "setting": {
+      "key": "demoTime.highlightBlur",
+      "value": null
+    }
+  }
+]

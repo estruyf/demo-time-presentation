@@ -1,0 +1,23 @@
+Index: /.demo/demo.json
+===================================================================
+--- /.demo/demo.json
++++ /.demo/demo.json
+@@ -4,8 +4,16 @@
+   "description": "",
+   "demos": [
+     {
+       "title": "Highlight code",
+-      "steps": []
++      "steps": [
++        {
++          "action": "highlight",
++          "path": ".demo/demo.json",
++          "startPlaceholder": "\"action\": \"highlight\"",
++          "endPlaceholder": "\"zoom\": 3",
++          "zoom": 3
++        }
++      ]
+     }
+   ]
+ }
+\ No newline at end of file
