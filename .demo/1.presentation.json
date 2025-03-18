@@ -453,15 +453,54 @@
       "description": "",
       "steps": [
         {
+          "action": "openSlide",
+          "path": "/.demo/slides/presenter-view.md"
+        }
+      ]
+    },
+    {
+      "title": "Presenter view",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": "snippets/endPresentation.json"
+        },
+        {
           "action": "executeVSCodeCommand",
           "command": "demo-time.showPresenterView"
         }
       ]
     },
     {
+      "title": "Notes",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": "snippets/startPresentation.json"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/notes.md"
+        }
+      ],
+      "notes": {
+        "path": "notes/notes.md",
+        "showOnTrigger": true
+      }
+    },
+    {
       "title": "Showcases",
       "description": "",
       "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.focusRightGroup"
+        },
+        {
+          "action": "close"
+        },
         {
           "action": "openSlide",
           "path": "/.demo/slides/showcases.md"
