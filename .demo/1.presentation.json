@@ -139,9 +139,35 @@
       ]
     },
     {
+      "title": "File action",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": "snippets/endPresentation.json"
+        },
+        {
+          "action": "create",
+          "path": "/.demo/demo.json",
+          "contentPath": "/snapshots/demo.snapshot.json"
+        },
+        {
+          "action": "replace",
+          "path": ".demo/demo.json",
+          "position": "start:end",
+          "contentPath": "/data/demo-start.json",
+          "lineInsertionDelay": 150
+        }
+      ]
+    },
+    {
       "title": "Example highlighting",
       "description": "",
       "steps": [
+        {
+          "action": "snippet",
+          "contentPath": "snippets/starPresentation.json"
+        },
         {
           "action": "openSlide",
           "path": "/.demo/slides/example-highlighting.md"
@@ -524,6 +550,17 @@
         {
           "action": "openSlide",
           "path": "/.demo/slides/want-to-know-more.md"
+        }
+      ]
+    },
+    {
+      "title": "Website",
+      "description": "",
+      "steps": [
+        {
+          "action": "openWebsite",
+          "url": "https://demotime.elio.dev",
+          "openInVSCode": true
         }
       ]
     },
