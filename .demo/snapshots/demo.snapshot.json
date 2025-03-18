@@ -2,10 +2,5 @@
   "$schema": "https://demotime.elio.dev/demo-time.schema.json",
   "title": "demo.json",
   "description": "",
-  "demos": [
-    {
-      "title": "Highlight code",
-      "steps": []
-    }
-  ]
+  "demos": []
 }

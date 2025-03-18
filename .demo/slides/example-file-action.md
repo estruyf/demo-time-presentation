@@ -9,12 +9,10 @@ Create a new file and open it after that.
 
 ```json
 {
-  "action": "create",
+  "action": "replace",
   "path": ".demo/demo.json",
-  "contentPath": "data/demo-start.json"
-},
-{
-  "action": "open",
-  "path": ".demo/demo.json"
+  "position": "start:end",
+  "contentPath": "/data/demo-start.json",
+  "lineInsertionDelay": 150
 }
 ```
