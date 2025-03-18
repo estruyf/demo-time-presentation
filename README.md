@@ -27,11 +27,8 @@ To get started with the materials in this repository, follow these steps:
    ```
 4. Install the required extensions:
    - [Demo Time](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-demo-time)
-
-## Usage
-
-- Open the Demo Time panel
-- Click on the first demo to get started
+5. Open the `Demo Time` panel in Visual Studio Code.
+6. Click on the first demo to get started.
 
 ## License
 
