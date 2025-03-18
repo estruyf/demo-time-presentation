@@ -1,5 +1,11 @@
 {
   "workbench.statusBar.visible": true,
   "workbench.editor.showTabs": "multiple",
-  "workbench.activityBar.location": "default"
+  "workbench.activityBar.location": "default",
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "expand",
+  "editor.hover.enabled": false,
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#F141A8"
+  }
 }

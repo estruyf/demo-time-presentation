@@ -8,6 +8,9 @@
       "description": "",
       "steps": [
         {
+          "action": "closeAll"
+        },
+        {
           "action": "snippet",
           "contentPath": "snippets/cleanup.json"
         },
