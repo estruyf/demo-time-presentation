@@ -166,7 +166,7 @@
       "steps": [
         {
           "action": "snippet",
-          "contentPath": "snippets/starPresentation.json"
+          "contentPath": "snippets/startPresentation.json"
         },
         {
           "action": "openSlide",
@@ -571,6 +571,19 @@
         {
           "action": "openSlide",
           "path": "/.demo/slides/thank-you.md"
+        }
+      ]
+    },
+    {
+      "title": "The end",
+      "description": "",
+      "steps": [
+        {
+          "action": "closeAll"
+        },
+        {
+          "action": "snippet",
+          "contentPath": "snippets/endPresentation.json"
         }
       ]
     }
