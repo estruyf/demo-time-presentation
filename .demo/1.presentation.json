@@ -39,6 +39,16 @@
       ]
     },
     {
+      "title": "About me",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/about-me.md"
+        }
+      ]
+    },
+    {
       "title": "What is Demo Time?",
       "description": "",
       "steps": [

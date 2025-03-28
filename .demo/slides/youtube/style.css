@@ -1,0 +1,8 @@
+.intro {
+  h1 {
+    font-size: 7rem !important;
+    font-family: "Hubot Sans", serif;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+}
