@@ -4,8 +4,9 @@
   "workbench.activityBar.location": "default",
   "editor.cursorStyle": "block",
   "editor.cursorBlinking": "expand",
-  "editor.hover.enabled": false,
+  // "editor.hover.enabled": false,
   "workbench.colorCustomizations": {
     "editorCursor.foreground": "#F141A8"
-  }
+  },
+  "workbench.colorTheme": "GitHub Dark"
 }

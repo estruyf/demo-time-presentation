@@ -1,0 +1,226 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "Socials",
+  "description": "",
+  "demos": [
+    {
+      "title": "Getting started with Demo Time",
+      "description": "",
+      "steps": [
+        {
+          "action": "closeAll"
+        },
+        {
+          "action": "snippet",
+          "contentPath": "snippets/cleanup.json"
+        },
+        {
+          "action": "create",
+          "path": "/.demo/slides/create-a-slide.md",
+          "contentPath": "/snapshots/create-a-slide.snapshot.md"
+        },
+        {
+          "action": "create",
+          "path": "/.demo/slides/demo-layout-slide.md",
+          "contentPath": "/snapshots/demo-layout-slide.snapshot.md"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "demo-time.togglePresentationMode"
+        },
+        {
+          "action": "snippet",
+          "contentPath": "snippets/startPresentation.json"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/getting-started-with-demo-time.md"
+        }
+      ]
+    },
+    {
+      "title": "About me",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/about-me.md"
+        }
+      ]
+    },
+    {
+      "title": "What is Demo Time?",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/what-is-demo-time.md"
+        }
+      ]
+    },
+    {
+      "title": "Benefits of Demo Time",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/benefits.md"
+        }
+      ]
+    },
+    {
+      "title": "How to get started?",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/how-to-get-started.md"
+        }
+      ]
+    },
+    {
+      "title": "Demo Actions",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/demo-actions.md"
+        }
+      ]
+    },
+    {
+      "title": "Actions",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/actions.md"
+        }
+      ]
+    },
+    {
+      "title": "Example file action",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/example-file-action.md"
+        }
+      ]
+    },
+    {
+      "title": "Example highlighting",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/example-highlighting.md"
+        }
+      ]
+    },
+    {
+      "title": "Slides",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/slides.md"
+        }
+      ]
+    },
+    {
+      "title": "Present your slides",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/present-your-slides.md"
+        }
+      ]
+    },
+    {
+      "title": "Theme support",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/update-theme.md"
+        }
+      ]
+    },
+    {
+      "title": "Update theme",
+      "description": "",
+      "steps": [
+        {
+          "action": "setTheme",
+          "theme": "Default Light Modern"
+        }
+      ]
+    },
+    {
+      "title": "Update theme",
+      "description": "",
+      "steps": [
+        {
+          "action": "setTheme",
+          "theme": "Shades of Purple"
+        }
+      ]
+    },
+    {
+      "title": "Update theme",
+      "description": "",
+      "steps": [
+        {
+          "action": "setTheme",
+          "theme": "The unnamed"
+        }
+      ]
+    },
+    {
+      "title": "Showcases",
+      "description": "",
+      "steps": [
+        {
+          "action": "setTheme",
+          "theme": "GitHub Dark"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/showcases2.md"
+        }
+      ]
+    },
+    {
+      "title": "Want to know more",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/want-to-know-more.md"
+        }
+      ]
+    },
+    {
+      "title": "Thank you",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/thank-you.md"
+        }
+      ]
+    },
+    {
+      "title": "Working on it",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/working-on-it.md"
+        }
+      ]
+    }
+  ]
+}

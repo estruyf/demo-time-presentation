@@ -1,0 +1,26 @@
+{
+  "name": "demo-script-project",
+  "version": "1.0.0",
+  "description": "A project to demonstrate a demo script with voiceover and viewer experience.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "ts-node": "^10.0.0",
+    "typescript": "^4.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/demo-script-project.git"
+  },
+  "keywords": [
+    "demo",
+    "typescript",
+    "presentation"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

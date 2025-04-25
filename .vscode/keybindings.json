@@ -1,0 +1,12 @@
+[
+  {
+    "key": "right",
+    "command": "demo-time.start",
+    "when": "demo-time.presentation && activeWebviewPanelId == demoTime:preview"
+  },
+  {
+    "key": "right right",
+    "command": "demo-time.start",
+    "when": "demo-time.presentation && activeWebviewPanelId != demoTime:preview"
+  }
+]
