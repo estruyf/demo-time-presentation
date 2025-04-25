@@ -26,6 +26,14 @@
         },
         {
           "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleFullScreen"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "hideCustomTitleBarInFullScreen"
+        },
+        {
+          "action": "executeVSCodeCommand",
           "command": "demo-time.togglePresentationMode"
         },
         {
@@ -597,6 +605,14 @@
         {
           "action": "snippet",
           "contentPath": "snippets/endPresentation.json"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleFullScreen"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "hideCustomTitleBarInFullScreen"
         }
       ]
     }
