@@ -2,5 +2,186 @@
   "$schema": "https://demotime.elio.dev/demo-time.schema.json",
   "title": "trailer",
   "description": "",
-  "demos": []
+  "demos": [
+    {
+      "title": "Clean",
+      "description": "",
+      "steps": [
+        {
+          "action": "closeAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "demo-time.togglePresentationView"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "demo-time.togglePresentationMode"
+        }
+      ]
+    },
+    {
+      "title": "Open index",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "/demo-script-project/src/index.ts"
+        }
+      ]
+    },
+    {
+      "title": "Highlight init",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "/demo-script-project/src/index.ts",
+          "position": "4:7"
+        }
+      ]
+    },
+    {
+      "title": "Open the demo script",
+      "description": "",
+      "steps": [
+        {
+          "action": "create",
+          "path": "/demo-script-project/src/scripts/demoScript.ts",
+          "contentPath": "/snapshots/demoScript.snapshot.ts"
+        },
+        {
+          "action": "open",
+          "path": "/demo-script-project/src/scripts/demoScript.ts"
+        },
+        {
+          "action": "highlight",
+          "path": "/demo-script-project/src/scripts/demoScript.ts",
+          "position": "1:7"
+        }
+      ]
+    },
+    {
+      "title": "Add viewer experience",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "/demo-script-project/src/scripts/demoScript.ts",
+        },
+        {
+          "action": "applyPatch",
+          "path": "/demo-script-project/src/scripts/demoScript.ts",
+          "contentPath": "/snapshots/demoScript.snapshot.ts",
+          "patch": "/patches/demoScript.patch"
+        },
+        {
+          "action": "open",
+          "path": "/demo-script-project/src/scripts/demoScript.ts"
+        }
+      ]
+    },
+    {
+      "title": "Inser new line",
+      "description": "",
+      "steps": [
+        {
+          "action": "write",
+          "path": "/demo-script-project/src/scripts/demoScript.ts",
+          "position": 6,
+          "content": "\n    viewerExperience();\n"
+        },
+        {
+          "action": "save",
+          "path": "/demo-script-project/src/scripts/demoScript.ts"
+        },
+        {
+          "action": "highlight",
+          "path": "/demo-script-project/src/scripts/demoScript.ts",
+          "position": "6",
+          "highlightWholeLine": true
+        }
+      ]
+    },
+    {
+      "title": "title",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/youtube/title.md"
+        }
+      ]
+    },
+    {
+      "title": "key",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/youtube/key.md"
+        }
+      ]
+    },
+    {
+      "title": "how",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/youtube/how.md"
+        }
+      ]
+    },
+    {
+      "title": "stress-free",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/youtube/stress-free.md"
+        }
+      ]
+    },
+    {
+      "title": "target",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/youtube/target.md"
+        }
+      ]
+    },
+    {
+      "title": "ready",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/youtube/ready.md"
+        }
+      ]
+    },
+    {
+      "title": "contribute",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/youtube/contribute.md"
+        }
+      ]
+    },
+    {
+      "title": "end",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/youtube/end.md"
+        }
+      ]
+    }
+  ]
 }

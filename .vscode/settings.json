@@ -1,5 +1,5 @@
 {
-  "workbench.statusBar.visible": true,
+  "editor.formatOnSave": false,
   "workbench.editor.showTabs": "multiple",
   "workbench.activityBar.location": "default",
   "editor.cursorStyle": "block",
@@ -8,5 +8,7 @@
   "workbench.colorCustomizations": {
     "editorCursor.foreground": "#F141A8"
   },
-  "workbench.colorTheme": "GitHub Dark"
+  "editor.hover.enabled": false,
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "workbench.statusBar.visible": true
 }

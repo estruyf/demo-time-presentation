@@ -1,9 +1,9 @@
 // File: /demo-script-project/demo-script-project/src/index.ts
-import { runDemo } from './scripts/demoScript';
+import { runDemo } from "./scripts/demoScript";
 
 const init = () => {
-    console.log("Initializing demo environment...");
-    runDemo();
+  console.log("Initializing demo environment...");
+  runDemo();
 };
 
 init();

@@ -612,7 +612,7 @@
         },
         {
           "action": "executeVSCodeCommand",
-          "command": "hideCustomTitleBarInFullScreen"
+          "command": "showCustomTitleBar"
         }
       ]
     }

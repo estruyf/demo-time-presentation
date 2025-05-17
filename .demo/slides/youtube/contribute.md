@@ -8,8 +8,4 @@ customTheme: .demo/slides/youtube/style.css
 
 - 💬 Share feedback
 - 🛠 Contribute on GitHub
-- 🌍 Spread the word
-
-  X / GitHub: @estruyf
-
-  Bluesky: @eliostruyf.com
+- 🌍 Spread the word #DemoTime

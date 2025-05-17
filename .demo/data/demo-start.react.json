@@ -33,34 +33,6 @@
           "zoom": 3
         }
       ]
-    },
-    {
-      "title": "Execute VSCode commands",
-      "description": "",
-      "steps": [
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.toggleFullScreen"
-        },
-        {
-          "action": "executeVSCodeCommand",
-          "command": "hideCustomTitleBarInFullScreen"
-        },
-        {
-          "action": "executeVSCodeCommand",
-          "command": "demo-time.togglePresentationMode"
-        }
-      ]
-    },
-    {
-      "title": "Open a slide",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": ".demo/slides/react/want-to-know-more.md"
-        }
-      ]
     }
   ]
 }

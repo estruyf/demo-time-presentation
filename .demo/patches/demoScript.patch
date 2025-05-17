@@ -1,0 +1,18 @@
+Index: /demo-script-project/src/scripts/demoScript.ts
+===================================================================
+--- /demo-script-project/src/scripts/demoScript.ts
++++ /demo-script-project/src/scripts/demoScript.ts
+@@ -5,5 +5,13 @@
+     console.log("Welcome to the demo!");
+   }, 2000);
+ }
+ 
++function viewerExperience() {
++  console.log("Setting up viewer experience...");
++  // Simulate viewer experience
++  setTimeout(() => {
++    console.log("Viewer experience is ready.");
++  }, 2000);
++}
++
+ export { runDemo };

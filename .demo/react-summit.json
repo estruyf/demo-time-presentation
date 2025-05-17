@@ -1,0 +1,209 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "React Summit",
+  "description": "",
+  "version": 2,
+  "demos": [
+    {
+      "title": "Demo Time",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides//react/intro.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Create a script",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "demo-time.createDemoFile"
+        }
+      ]
+    },
+    {
+      "title": "File action",
+      "description": "",
+      "steps": [
+        {
+          "action": "create",
+          "path": ".demo/demo.json",
+          "contentPath": ".demo/snapshots/demo.snapshot.json"
+        },
+        {
+          "action": "replace",
+          "path": ".demo/demo.json",
+          "contentPath": ".demo/data/demo-start.react.json",
+          "position": "start:end",
+          "lineInsertionDelay": 50
+        }
+      ]
+    },
+    {
+      "title": "Demo highlighting",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": ".demo/demo.json",
+          "startPlaceholder": "\"action\": \"highlight\"",
+          "endPlaceholder": "\"zoom\": 3",
+          "zoom": 3
+        }
+      ]
+    },
+    {
+      "title": "Use-case 2",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/react/use-case-2.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Add VSCode command actions",
+      "description": "",
+      "steps": [
+        {
+          "action": "applyPatch",
+          "path": ".demo/demo.json",
+          "contentPath": ".demo/snapshots/demo-start.react.snapshot.json",
+          "patch": ".demo/patches/demo-start.react.vscode.patch"
+        },
+        {
+          "action": "open",
+          "path": ".demo/data/demo-start.react.json"
+        },
+        {
+          "action": "highlight",
+          "path": ".demo/demo.json",
+          "startPlaceholder": "\"title\": \"Execute VSCode commands\",",
+          "endPlaceholder": "\"command\": \"demo-time.togglePresentationMode\"",
+          "zoom": 3
+        }
+      ]
+    },
+    {
+      "title": "Execute VSCode commands",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleFullScreen"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "hideCustomTitleBarInFullScreen"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "demo-time.togglePresentationMode"
+        }
+      ]
+    },
+    {
+      "title": "Use-case 3",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/react/use-case-3.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Insert open slide action",
+      "description": "",
+      "steps": [
+        {
+          "action": "applyPatch",
+          "path": "/.demo/demo.json",
+          "contentPath": "/.demo/snapshots/demo-start.react.snapshot.json",
+          "patch": "/.demo/patches/openslide.patch"
+        },
+        {
+          "action": "open",
+          "path": "/.demo/demo.json"
+        },
+        {
+          "action": "highlight",
+          "path": ".demo/demo.json",
+          "startPlaceholder": "\"action\": \"openSlide\"",
+          "endPlaceholder": "\"path\": \".demo/slides/react/want-to-know-more.md\"",
+          "zoom": 3
+        }
+      ]
+    },
+    {
+      "title": "Open the slide content",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": ".demo/slides/react/want-to-know-more.md"
+        },
+        {
+          "action": "highlight",
+          "path": ".demo/slides/react/want-to-know-more.md",
+          "position": "1:4",
+          "zoom": 3
+        }
+      ]
+    },
+    {
+      "title": "Open the slide",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/react/want-to-know-more.md"
+        }
+      ]
+    },
+    {
+      "title": "Thank you",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/react/thank-you.md"
+        }
+      ]
+    },
+    {
+      "title": "The end",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleFullScreen"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "showCustomTitleBar"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "demo-time.togglePresentationMode"
+        }
+      ]
+    }
+  ]
+}
