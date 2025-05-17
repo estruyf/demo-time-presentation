@@ -1,6 +1,6 @@
 ---
 customLayout: .demo/layouts/about-me.hbs
-position: left # left, right - Default: right
+position: left
 helloMsg: Thank you!
 name: Elio Struyf
 imageSrc: https://elio.dev/eliostruyf_2024_bw_cutout.png
