@@ -2,13 +2,16 @@
   "editor.formatOnSave": false,
   "workbench.editor.showTabs": "multiple",
   "workbench.activityBar.location": "default",
-  "editor.cursorStyle": "block",
-  "editor.cursorBlinking": "expand",
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorBlinking": "blink",
   // "editor.hover.enabled": false,
   "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#F141A8"
+    "editorCursor.foreground": null
   },
-  "editor.hover.enabled": false,
+  "editor.hover.enabled": true,
   "github.copilot.nextEditSuggestions.enabled": false,
-  "workbench.statusBar.visible": true
+  "workbench.statusBar.visible": true,
+  "workbench.colorTheme": "GitHub Dark Default",
+  "editor.fontSize": 12,
+  "terminal.integrated.fontSize": 12
 }

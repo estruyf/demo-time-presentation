@@ -19,6 +19,142 @@
       }
     },
     {
+      "title": "Wrong settings",
+      "description": "",
+      "steps": [
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "workbench.colorTheme",
+            "value": "GitHub Dark Default"
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "editor.fontSize",
+            "value": 12
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "terminal.integrated.fontSize",
+            "value": 12
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "editor.cursorStyle",
+            "value": "line-thin"
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "editor.cursorBlinking",
+            "value": "blink"
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "workbench.colorCustomizations",
+            "value": {
+              "editorCursor.foreground": null
+            }
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "editor.hover.enabled",
+            "value": true
+          }
+        },
+        {
+          "action": "open",
+          "path": "demo-script-project/src/scripts/demoScript.ts"
+        }
+      ]
+    },
+    {
+      "title": "Correct settings",
+      "description": "",
+      "steps": [
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "workbench.colorTheme",
+            "value": "GitHub Light Default"
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "editor.fontSize",
+            "value": 20
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "terminal.integrated.fontSize",
+            "value": 25
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "editor.cursorStyle",
+            "value": "block"
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "editor.cursorBlinking",
+            "value": "expand"
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "workbench.colorCustomizations",
+            "value": {
+              "editorCursor.foreground": "#F141A8"
+            }
+          }
+        },
+        {
+          "action": "setSetting",
+          "setting": {
+            "key": "editor.hover.enabled",
+            "value": false
+          }
+        },
+        {
+          "action": "open",
+          "path": "demo-script-project/src/scripts/demoScript.ts"
+        }
+      ]
+    },
+    {
+      "title": "Stress",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides//react/stress.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
       "title": "Create a script",
       "description": "",
       "steps": [
