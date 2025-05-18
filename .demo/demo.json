@@ -48,6 +48,10 @@
         },
         {
           "action": "executeVSCodeCommand",
+          "command": "workbench.action.hideEditorTabs"
+        },
+        {
+          "action": "executeVSCodeCommand",
           "command": "demo-time.togglePresentationMode"
         }
       ]

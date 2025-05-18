@@ -2,7 +2,7 @@ Index: /.demo/demo.json
 ===================================================================
 --- /.demo/demo.json
 +++ /.demo/demo.json
-@@ -32,7 +32,35 @@
+@@ -32,7 +32,39 @@
            "endPlaceholder": "\"zoom\": \"3\"",
            "zoom": 3
          }
@@ -19,6 +19,10 @@ Index: /.demo/demo.json
 +        {
 +          "action": "executeVSCodeCommand",
 +          "command": "hideCustomTitleBarInFullScreen"
++        },
++        {
++          "action": "executeVSCodeCommand",
++          "command": "workbench.action.hideEditorTabs"
 +        },
 +        {
 +          "action": "executeVSCodeCommand",

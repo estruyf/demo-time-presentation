@@ -155,16 +155,6 @@
       }
     },
     {
-      "title": "Create a script",
-      "description": "",
-      "steps": [
-        {
-          "action": "executeVSCodeCommand",
-          "command": "demo-time.createDemoFile"
-        }
-      ]
-    },
-    {
       "title": "File action",
       "description": "",
       "steps": [
@@ -246,7 +236,7 @@
         },
         {
           "action": "executeVSCodeCommand",
-          "command": "demo-time.togglePresentationMode"
+          "command": "workbench.action.hideEditorTabs"
         }
       ]
     },
@@ -337,7 +327,7 @@
         },
         {
           "action": "executeVSCodeCommand",
-          "command": "demo-time.togglePresentationMode"
+          "command": "workbench.action.showMultipleEditorTabs"
         }
       ]
     }
